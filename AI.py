@@ -17,7 +17,7 @@ def load_lottiefile(url):
 
 lottie_animation = load_lottiefile("https://raw.githubusercontent.com/Dharanish111/FixitAI/main/animation.json")
 #lottie_animation = load_lottiefile("https://github.com/Dharanish111/FixitAI/main/animation.json")
-st_lottie(lottie_animation, height=300, width=400)
+st_lottie(lottie_animation, height=100, width=100)
 
 
 openai_api_key = os.environ.get("openai_api_key")
