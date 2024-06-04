@@ -5,6 +5,7 @@ from streamlit_lottie import st_lottie
 import json
 from datetime import datetime, timedelta
 import time
+import os
 
 # Load Lottie animation from a JSON file
 def load_lottiefile(filepath: str):
@@ -13,8 +14,9 @@ def load_lottiefile(filepath: str):
 
 lottie_animation = load_lottiefile("https://github.com/Dharanish111/FixitAI/blob/main/animation.json")
 
-openai_api_key = ""
-google_gemini_key = ""
+openai_api_key = os.environ.get("openai_api_key")
+                        
+
 
 
 
