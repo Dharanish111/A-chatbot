@@ -15,7 +15,8 @@ def load_lottiefile(url):
     return response.json()
 
 
-lottie_animation = load_lottiefile("https://github.com/Dharanish111/FixitAI/main/animation.json")
+lottie_animation = load_lottiefile("https://raw.githubusercontent.com/Dharanish111/FixitAI/main/animation.json")
+#lottie_animation = load_lottiefile("https://github.com/Dharanish111/FixitAI/main/animation.json")
 st_lottie(lottie_animation, height=300, width=400)
 
 
