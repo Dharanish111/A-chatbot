@@ -7,15 +7,18 @@ from datetime import datetime, timedelta
 import time
 import os
 
-# Load Lottie animation from a JSON file
-def load_lottiefile(url: str):
-    with open(url, "r") as f:
-        return json.load(f)
+
+
+def load_lottiefile(url):
+    response = requests.get(url)
+    return response.json()
+
 
 lottie_animation = load_lottiefile("https://github.com/Dharanish111/FixitAI/blob/main/animation.json")
-
+st_lottie(lottie_animation, height=300, width=400)
 openai_api_key = os.environ.get("openai_api_key")
                         
+
 
 
 
