@@ -8,8 +8,8 @@ import time
 import os
 
 # Load Lottie animation from a JSON file
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
+def load_lottiefile(url: str):
+    with open(url, "r") as f:
         return json.load(f)
 
 lottie_animation = load_lottiefile("https://github.com/Dharanish111/FixitAI/blob/main/animation.json")
