@@ -13,8 +13,8 @@ def load_lottiefile(filepath: str):
 
 lottie_animation = load_lottiefile("/home/dharanish/Downloads/animation.json")
 
-openai_api_key = ""
-google_gemini_key = ""
+openai_api_key = "sk-proj-OUks8XrNN4dP7odMwuTJT3BlbkFJiNHnPY8cDupfDDQIRxN8"
+google_gemini_key = "AIzaSyBSd-CByMe7i-Maxgatg3ISn3vyQw3M2l8"
 
 # Initialize session state attributes
 if 'selected_api' not in st.session_state:
